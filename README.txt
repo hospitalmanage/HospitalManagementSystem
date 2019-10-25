@@ -13,6 +13,18 @@ Files should be used while developing each PAGE
 # Font-size of whole Page : 14px
 # Color of the boxes : #160424
 # Color of the block : #160424
+# Hovering Effect should be present in each Box {
+	
+	Text-Color : White
+	Background-Color : #160424
+
+	# While Active Tab in Navigation Bar {
+
+		Background-Color : #0e0217
+		Text-Color : White
+		# There should be No Text Decoration(Help) IMP
+	}
+}
 
 
 # Font should be used : Courier New
