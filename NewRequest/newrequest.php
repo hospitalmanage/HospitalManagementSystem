@@ -2,8 +2,94 @@
 <html>
 <head>
 	<title>Hospital Management System</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
 </head>
+
+<style>
+	body {
+		font: 14px Courier New;
+		height: 1500px;
+	}
+
+	ul {
+			list-style-type: none;
+			margin: 0px;
+			padding: 20px;
+			overflow: hidden;
+			background-color: #160424;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+		}
+		.admin {
+			float: left;
+			
+			padding: 14px 16px;
+		}
+
+		.nav-css {
+			float: right;
+			margin-left: 10px;
+			text-decoration: none;
+			color: white;
+		}
+		li a:hover:not(.active) {
+			background-color: #0e0217;
+			color: white; 
+			text-decoration: none;
+		}
+		.active {
+			background-color: #0e0217;
+			color: white; 
+			text-decoration: none;
+		}
+		.active:hover {
+			color: white;
+			text-decoration: none;
+		}
+
+		.block {
+			color:#ffffff ;
+			background-color: #160424;
+			width: 100%;
+			height: 250px;
+			letter-spacing: 15px;
+			text-align: center;
+			box-sizing: 50%;
+		}
+		.block-content {
+			padding-top: 75px;
+			margin: 0;
+		}
+
+		.content {
+			color: #041c0f;
+			padding: 20px; 
+		}
+</style>
 <body>
+
+	<ul>
+
+		<li><a href="#" class="nav admin">Hospital Management System</a></li>
+		<li><a href="form.php" class="nav-css">Contact Us</a></li>
+		<li><a href="#" class="nav-css">Testimonial</a></li>
+		<li><a href="#" class="nav-css">About Us</a></li>
+		<li><a href="../index.php" class="nav-css">Home</a></li>
+	</ul>
+
+	<div class="block text-center">
+		<div class="block-content justify-content-center">
+		
+			<h1>Hospital Management System</h1>
+		
+		</div>
+	</div> <br> <br>
 
 	<h1><center><strong>Registration Page</strong></center></h1>
 	<h3><center>Jay - Durgesh - Ronak - Shrey</center></h3>

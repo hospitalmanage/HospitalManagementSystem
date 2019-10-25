@@ -97,6 +97,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <style type="text/css">
         body{ font: 14px sans-serif; }
         .wrapper{ width: 350px; padding: 20px; }
+        .sign-up {
+            color: blue;
+        }
+        .sign-up:hover {
+            color: #05071c;
+        }
     </style>
 </head>
 <body>
@@ -117,7 +123,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            <p>Don't have an account? <a href="register.php" class="sign-up">Sign up now</a>.</p>
         </form>
     </div>    
 </body>
