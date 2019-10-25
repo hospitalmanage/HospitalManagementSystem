@@ -4,7 +4,7 @@ Files should be used while developing each PAGE
 
 # Required Things(Compulsary) {
 	Indentations : 4 spaces only
-	Code-Quality : Maintained
+	Code-Quality : Maintained;
 }
 
 # Navigation Bar should be present in each PAGE
