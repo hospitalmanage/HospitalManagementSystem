@@ -23,10 +23,10 @@ Files should be used while developing each PAGE
 
     Name of all the fields :-
 
-    1) fname	    size="30"
-    2) lname	    size="30"
-    3) mobile	    size="40"
-    4) address	    rows="4" cols="40"
-    5) mail		    size="40"
-    6) occupation   size="40"
-    7) aadhar		size="40"
+    1) fname	    
+    2) lname	    
+    3) mobile	    
+    4) address	    
+    5) mail		    
+    6) occupation   
+    7) aadhar		
