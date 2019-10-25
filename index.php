@@ -123,7 +123,7 @@
 	</ul>
 
 	<div class="block text-center">
-		<div class="block-content ">
+		<div class="block-content justify-content-center">
 		
 			<h1>Hospital Management System</h1>
 		
