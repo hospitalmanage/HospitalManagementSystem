@@ -14,7 +14,6 @@ Files should be used while developing each PAGE
 # Color of the boxes : #160424
 # Color of the block : #160424
 
-(#Color Should be used as insight :)
 
 # Font should be used : Courier New
 
