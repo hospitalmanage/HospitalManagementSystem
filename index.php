@@ -116,10 +116,10 @@
 	<ul>
 
 		<li><a href="#" class="nav admin">Hospital Management System</a></li>
-		<li><a href="form.php" class="nav-css">Contact Us</a></li>
+		<li><a href="contactus.html" class="nav-css">Contact Us</a></li>
 		<li><a href="#" class="nav-css">Testimonial</a></li>
-		<li><a href="#" class="nav-css">About Us</a></li>
-		<li><a href="#" class="nav-css active">Home</a></li>
+		<li><a href="aboutus.html" class="nav-css">About Us</a></li>
+		<li><a href="index.php" class="nav-css active">Home</a></li>
 	</ul>
 
 	<div class="block text-center">
