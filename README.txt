@@ -22,7 +22,9 @@ Files should be used while developing each PAGE
 
 		Background-Color : #0e0217
 		Text-Color : White
-		# There should be No Text Decoration(Help) IMP
+		# There should be No Text Decoration(Help) IMP.
+		Please Make Sure that You are comforatble with this 
+		# If not than Please Ask Shrey or Ronak for further applicable
 	}
 }
 
