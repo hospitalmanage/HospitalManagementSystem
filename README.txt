@@ -10,7 +10,7 @@ Files should be used while developing each PAGE
 # Navigation Bar should be present in each PAGE
 # Block should be present in each PAGE
 # Font of whole Page : Courier New
-# Font-size of whole Page : 14px
+# Font-size of whole Page : 14
 # Color of the boxes : #160424
 # Color of the block : #160424
 # Hovering Effect should be present in each Box {
