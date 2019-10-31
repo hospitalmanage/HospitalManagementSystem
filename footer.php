@@ -71,6 +71,7 @@
 		.block-content {
 			padding-top: 75px;
 			margin: 0;
+			text-shadow: 5px 5px 8px white;
 		}
 
 		.content {
@@ -78,39 +79,106 @@
 			padding: 20px; 
 		}
 
-		.page-footer {
-			
-			
-			color: black;
-			text-decoration: none;
-		}
-		
-		.footer-content {
-		
-		}
-		.list-unstyled {
-			
-			 background-color: white;
-			 color: #160424;
-			 padding: 14px 26px;
-			 margin: 10px;
-			 text-align: center;
-			 text-decoration: none;
-			display: inline-block; 
-			 border-style: solid;
-			 border-width: 2px;
-			 border-color: #160424;
-			 letter-spacing: 4px;
-		}
-		.list-unstyled:hover {
-			background-color: #160424
-			color: white;
-			text-decoration: none;
-			
-		}
-		.footer-copyright {
-			background-color: darkblue;
-		}
+		.full {
+	    width: 100%;    
+	}
+	
+	.footer {
+		background: #160424;
+		height: auto;
+		padding-bottom: 30px;
+		position: relative;
+		width: 100%;
+		border-bottom: 1px solid #CCCCCC;
+		border-top: 1px solid #DDDDDD;
+	}
+	.footer p {
+		margin: 0;
+	}
+	.footer img {
+		max-width: 100%;
+	}
+	.footer h3 {
+		color: white;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 27px;
+		padding: 40px 0 0px;
+		text-transform: uppercase;
+	  margin-bottom: 13px;
+	}
+
+	.footer h4 {
+		color: white;
+		font-size: 2em;
+		font-weight: 600;
+		line-height: 38px;
+		padding: 40px 0 10px;
+		font-family: cursive;
+	  font-weight: lighter
+	}
+
+	.footer ul {
+		font-size: 13px;
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 0;
+		margin-top: 0px;
+		color: #7F8C8D;
+	  padding: 0 0 8px 0;
+	}
+
+	.email{
+	  border-bottom: 1px solid #fff;
+	}
+	.footer ul li a {
+		padding: 0 0 12px 0;
+		display: block;
+	}
+	.footer a {
+		color: white;
+	  font-weight: lighter;
+	}
+
+	.footer p {
+		color: white;
+	  font-weight: lighter;
+	  font-size: 
+	}
+
+	.footer a:hover {
+		text-decoration:none;
+	  font-weight: bold;
+	}
+	.supportLi h4 {
+		font-size: 20px;
+		font-weight: lighter;
+		line-height: normal;
+		margin-bottom: 0 !important;
+		padding-bottom: 0;
+	}
+
+	.bg-gray {
+		background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+		box-shadow: 0 1px 0 #B4B3B3;
+	}
+
+	}
+	.footer a {
+		color: #78828D
+	}
+
+	.footer-bottom {
+	  margin-top: 2em;
+		border-top: 1px solid #DDDDDD;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+	.footer-bottom p.pull-left {
+		padding-top: 6px;
+	  font-size: 0.75em
+	}
+
 
 	</style>
 </head>
@@ -134,47 +202,47 @@
 	</div>
 
 
-<footer class="page-footer pt-4">
-
-  <div class="container-fluid text-md-left">
-
-    <div class="row">
-
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <h5 class="footer-content text-uppercase">Footer Content</h5>
-        <p>Here you can use rows and columns to organize your footer content.</p>
-
-      </div>
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <div class="footer-links col-md-3 mb-md-0 mb-3">
-
-        <h5 class="text-uppercase">Links</h5>
-
-        <ul >
-          <li class="list-unstyled active">
-            <a href="#!">Link 1</a>
-          </li>
-          <li class="list-unstyled">
-            <a href="#!">Link 2</a>
-          </li>
-          <li class="list-unstyled">
-            <a href="#!">Link 3</a>
-          </li>
-          <li class="list-unstyled">
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-
-      </div>
-
+	<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h4> Hospital Management System </h4>
+                    <p>This page is created by Shrey Shah</p>
+                </div>
+                <div class="col-lg-3 col-sm-2 col-xs-3">
+                    <h3> Contact </h3>
+                    <ul>
+                        <li><a class="email"href="#"> srdjhms@gmail.com </a></li>
+                        
+                        <h3>Mobile No.</h3>
+                        <li> <p> (+91)9725230880 </p> </li>
+                        <li> <p> (+91)6354513368 </p> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-2 col-xs-3">
+                    <ul>
+                        <li> <h5> <a href="#" style="margin-top: 1em"> Home</a> <h5></li>
+                        <li> <h5><a href="#"> About Us </a> <h5></li>
+                        <li> <h5><a href="#"> Test0imonial </a> <h5></li>
+                        <li> <h5><a href="#"> Contact Us  </a> <h5></li>
+                    </ul>
+                </div>
+               
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
     </div>
-
-  </div>
-
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-  </div>
+    <!--/.footer-->
+                          
+    <div class="footer-bottom">
+        <div class="container">
+           <center> <p class="pull-left copyright"> Copyright © Footer 2014. All right reserved. </p> </center>
+       
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
 
 </footer>
+</body>
+</html>

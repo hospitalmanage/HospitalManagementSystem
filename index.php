@@ -27,7 +27,7 @@
 		li a {
 			display: block;
 			color: white;
-			text-align: center;
+		   	text-align: center;
 			padding: 14px 16px;
 		}
 		.admin {
@@ -88,6 +88,7 @@
 			 border-width: 2px;
 			 border-color: #160424;
 			 letter-spacing: 4px;
+			 border-radius: 5px;
 		}
 		.links:hover {
 			background-color: #160424;
