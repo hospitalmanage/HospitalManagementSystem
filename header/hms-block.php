@@ -1,8 +1,4 @@
-<html>
-
-	<!-- Linking the CSS file of this block -->
-	<link rel="stylesheet" href="./css/hms-block.css">
-<body>
+<link rel="stylesheet" type="text/css" href="./css/hms-block.css">
 
     <ul class="ul-links">
         <li><a href="#" class="nav admin">Hospital Management System</a></li>
@@ -19,6 +15,3 @@
     </div>
 
     <br> <br>
-
-</body>
-</html>

@@ -1,7 +1,3 @@
-<?php
-    // Validating form here
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,9 +64,10 @@
 					<td>8320070235</td>
 					<td>Narol, Ahmedabad</td>
 				</tr>
-			</table> <br> <br> <br>
+			</table> <!-- End of recepetionists table -->
 		</div>
-
+		<br> <br> <br>
+		<!-- Now creating the Chemists table -->
 		<h2>Chemists</h2>
 		<div class="chem-table">
 			<table>
