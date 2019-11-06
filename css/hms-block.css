@@ -4,10 +4,6 @@ body {
     height: 1500px;
   }
 
-h1 {
-    text-transform: uppercase;
-  }
-
 .ul-links {
     list-style-type: none;
     margin: 0px;

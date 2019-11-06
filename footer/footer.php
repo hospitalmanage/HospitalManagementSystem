@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="./css/footer.css">   
     <!-- Linking fontawesome for the icons. -->
     <script src="https://kit.fontawesome.com/ce6452e9e3.js" crossorigin="anonymous"></script>
-    <footer class="footer-content">
-        <div class="container-fluid">
+    <footer class="footer">
+        <div class="container-fluid footer-content">
             <div class="row">
                 <div class="col-sm-5">
                     <h4>Hospital Management System</h4> <br>
@@ -25,6 +25,11 @@
                     <a class="footer-links" href="#">Testimonial</a> <br> <br>
                     <a class="footer-links" href="contactus.html">Contact Us</a> <br> <br>                        
                     </div>
+                </div>
+            </div>
+            <div class="copyright-block">
+                <div class="copyright-content">
+                    <p>&COPY; COPYRIGHT by Shrey, Ronak, Durgesh, Jay till today's date.</p>
                 </div>
             </div>
     </footer>

@@ -4,6 +4,15 @@
 	<title>Hospital Management System</title>
 	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href= 
+"https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity= 
+"sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	crossorigin="anonymous"> 
+	<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+	</script> 
+	
 </head>
 
 <style>
@@ -98,99 +107,142 @@
 	<br> <br> <br> 
 
 	<form name="form" action="action.php" method="post" enctype="multipart/form-data" onsubmit="return validateform()">
-
-		<center>Name : <br> <input type="text" name="fname" placeholder="First Name" size="30"> &nbsp <input type="text" name="lname" placeholder="Last Name" size="30"></center> <br> <br>
+		<div id="input1" class="text-center"> 
+			<label>Name:</label> <br>
+			<input type="text" name="fname" required autocomplete="off" size="30" placeholder="First Name"> 
+			<i style='color:grey;' class='fa '></i> 
+			<input type="text" name="lname" required autocomplete="off" size="30" placeholder="Last Name">  
+			<i style='color:grey;' class='fa '></i> 
+		</div>  <br> <br>
 
 		<!--<center>Id : <br> <input type="number" name="id" placeholder="Please Enter Id Here." size="30"></center> <br> <br>-->
 
-		<center>Mobile No. : <br> <input type="text" name="mobile" placeholder="Enter Mobile Number Here." size="40"></center> <br> <br>
+		<div id="input2" class="text-center"> 
+			<label>Mobile Number:</label> <br>
+			<input type="text" name="mobile" required autocomplete="off" placeholder="Mobile Number" size="40"> 
+			<i style='color:grey;' class='fa '></i> 
+		</div>  <br> <br>
 
-		<center>Address : <br><textarea name="address" rows="4" cols="40" placeholder="Please Enter Address Here."></textarea></center> <br> <br>
+		<div id="input2" class="text-center"> 
+			<label>Address:</label> <br>
+			<input type="text" name="address" required autocomplete="off" placeholder="Address" size="60"> 
+			<i style='color:grey;' class='fa '></i> 
+		</div>  <br> <br>
+		
+		<div id="input2" class="text-center"> 
+			<label>Email Id:</label> <br>
+			<input type="text" name="mail" required autocomplete="off" size="40"> 
+			<i style='color:grey;' class='fa '></i> 
+		</div>  <br> <br>
 
-		<center>Email Id : <br> <input type="text" name="mail" placeholder="Enter Email Id Here" size="40"></center> <br> <br>
+		<div id="input2" class="text-center"> 
+			<label>Occupation:</label> <br>
+			<input type="text" name="occupation" required autocomplete="off" size="40"> 
+			<i style='color:grey;' class='fa '></i> 
+		</div>  <br> <br>
 
-		<center>Occupation : <br> <input type="text" name="occupation" placeholder="Please Enter Your Occupation Here." size="40"></center> <br> <br>
-
-		<center>Aadhar No. (Optional): <br> <input type="text" name="aadhar" placeholder="Please Enter Your Aadhar Number Here." size="40"></center> <br> <br> 
+		<div id="input2" class="text-center"> 
+			<label>Aadhar Number(Optional):</label> <br>
+			<input type="text" name="aadhar" autocomplete="off" size="40"> 
+			<i style='color:grey;' class='fa '></i> 
+		</div>  <br> <br>
 
 		<center> <input type="submit" name="submit" value="Submit">  &nbsp &nbsp &nbsp <input type="reset" name="reset" value="Reset"> </center> <br> <br> <br> <br> <br>
 		
+		
+		
+		
 	</form>
 
-	<script type="text/javascript">
+	<script>
 
-		function validateform() {
-			var a = document.forms['form']['fname'].value;
-			var b = document.forms['form']['lname'].value;
-			var c = document.forms['form']['mobile'].value;
-			var d = document.forms['form']['address'].value;
-			var x = document.forms['form']['mail'].value;
-			var y = document.forms['form']['occupation'].value;
-			var z = document.forms['form']['aadhar'].value;
-			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})/;
+		var firstName = $("input[name=fname]");
+		var lastName = $("input[name=lname]");
+		var mobile = $("input[name=mobile");
+		var address = $("input[name=address");
+		var mail = $("input[name=mail");
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		var occupation = $("input[name=occupation");
+		var aadhar = $("input[name=aadhar");
 
-			if (a == "") {
-				alert("Please enter your First Name.");
-				return false;
-			}
+		$(document).ready(function() { 
+			$('div input').focusout(function() {	
 
-			if (b == "") {
-				alert('Please enter Last Name.');
-				return false;
-			}
+				// For First Name and Last Name
+				if(firstName.val()=='' ) { 
+					var error=firstName.siblings('i'); 
+					error.addClass("fa-times").css('color', 'green'); 
+				} else { 
+					var correct=firstName.siblings('i'); 
+					correct.removeClass("fa-times").addClass("fa-check").css('color', 'green'); 
+				} 
 
-			if (c == "") {
-				alert('Please enter your mobile no.');
-				return false;
-			}
-			if (isNaN(c)) {
-				alert('Please enter numbers in Mobile No.');
-				return false;
-			}
-			if (c.length > 10) {
-				alert('Please enter 10 digits mobile number.');
-				return false;
-			}
-			if (c.length < 10) {
-				alert('Please enter 10 digits mobile number.');
-				return false;
-			}
+				if(lastName.val()=='' ) { 
+					var error=lastName.siblings('i'); 
+					error.addClass("fa-times").css('color', 'red'); 
+					
+				} else { 
+					var correct=lastName.siblings('i'); 
+					correct.removeClass("fa-times").addClass("fa-check").css('color', 'green'); 
+				} 
 
-			if (d == "") {
-				alert('Please enter your address.');
-				return false;
-			}
+				// For Mobile Number
+				if(mobile.val()=='' || isNaN(mobile.val()) || mobile.val().length > 10 || mobile.val().length < 10 ) { 
+					var error=mobile.siblings('i'); 
+					error.addClass("fa-times").css('color', 'red'); 
+				} 
+				else { 
+					var correct=mobile.siblings('i'); 
+					correct.removeClass("fa-times").addClass("fa-check").css('color', 'green'); 
+				} 
 
-			if (x == "") {
-				alert('Please enter your mail id.');
-				return false;
-			}
-			if (!filter.test(x)) {
-				alert('Please enter proper mail id format ("abc@gmail.com").');
-				return false;
-			}
+				// For Address
+				if(address.val()=='' ) { 
+					var error=address.siblings('i'); 
+					error.addClass("fa-times").css('color', 'red'); 
+				} 
+				else { 
+					var correct=address.siblings('i'); 
+					correct.removeClass("fa-times").addClass("fa-check").css('color', 'green'); 
+				} 
 
-			if (y == "") {
-				alert('Please enter your occupation.');
-				return false;
-			}
+				// For Email Id
+				if(mail.val()=='' || !filter.test(mail.val()) ) { 
+					var error=mail.siblings('i'); 
+					error.addClass("fa-times").css('color', 'red'); 
+				} 
+				else { 
+					var correct=mail.siblings('i'); 
+					correct.removeClass("fa-times").addClass("fa-check").css('color', 'green'); 
+				} 
 
-			if (z == "") {
-				return true;
-			}
-			if (isNaN(z)) {
-				alert('Please enter numbers in Aadhar No.');
-				return false;
-			} 
-			if (z.length > 12 || z.length < 12) {
-				alert('Please enter 12 digits Aadhar No.');
-				return false;
-			}
+				// For Occupation
+				if(occupation.val()=='' ) { 
+					var error=occupation.siblings('i'); 
+					error.addClass("fa-times").css('color', 'red'); 
+				} 
+				else { 
+					var correct=occupation.siblings('i'); 
+					correct.removeClass("fa-times").addClass("fa-check").css('color', 'green'); 
+				} 
 
-		}
-
-
-
+				// For Aadhar Number
+				if (aadhar.val()!='') {
+					if(isNaN(aadhar.val()) || aadhar.val().length > 12 || aadhar.val().length < 12) {
+						var error=aadhar.siblings('i'); 
+						error.removeClass("fa-check").addClass("fa-times").css('color', 'red'); 
+					} 
+					else {
+						var correct=aadhar.siblings('i'); 
+						correct.removeClass("fa-times").addClass("fa-check").css('color', 'green'); 
+					} 
+				} else {
+					var correct=aadhar.siblings('i'); 
+					correct.removeClass("fa-times").addClass("fa-check").css('color', 'green');
+				}
+				
+			}).trigger("focusout"); 
+		}); 
 	</script>
 
 <footer>
