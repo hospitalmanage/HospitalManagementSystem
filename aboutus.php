@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 
 
-.card-img-top, .card-img-bottom {
+.card-top {
 	background-color: #160424;
     padding: 40px;
     text-align: center;
@@ -74,7 +74,7 @@ $(document).ready(function(){
         <div class="row">
             <div class="col-sm-6">
                 <div class="card" style="width:400px; margin-left: 70px;">
-                    <div class="card-img-top">
+                    <div class="card-top">
     	                 <p>S</p>
                     </div>
                     <div class="card-body">
@@ -87,7 +87,7 @@ $(document).ready(function(){
             </div>      
             <div class="col-sm-6">
                 <div class="card" style="width:400px; margin-left: 75px;">
-                    <div class="card-img-bottom">
+                    <div class="card-top">
                         <p>R</p>
                     </div>
                     <div class="card-body">
@@ -102,7 +102,7 @@ $(document).ready(function(){
         <div class="row">    
             <div class="col-sm-6">
                 <div class="card" style="width:400px; margin-left: 70px;">
-                    <div class="card-img-top">
+                    <div class="card-top">
                        <p>D</p>
                     </div>
                     <div class="card-body">
@@ -115,7 +115,7 @@ $(document).ready(function(){
             </div>     
             <div class="col-sm-6">
                 <div class="card" style="width:400px; margin-left: 75px;">
-                    <div class="card-img-top">
+                    <div class="card-top">
                        <p>J</p>
                     </div>
                     <div class="card-body">

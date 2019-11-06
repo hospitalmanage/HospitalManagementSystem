@@ -5,15 +5,13 @@
 	<title>Hospital Management System</title>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-
+	<!-- Linking the CSS file of this webpage -->
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 <body>
-
 	<?php
 		include './header/hms-block.php';
 	?>
-
 	<div class="container">
 		<div class="content">
 			<br> <br>
@@ -22,14 +20,10 @@
 			<p>Please make sure that you should be comfortable to our website.<br>If not than without any hesitation Contact Us.</p>
 		</div>
 		<div>
-			
 			<a href="NewRequest/newrequest.php" class="links" target="_self">New Request Here</a> <br> <br>
-			
-			<a href="Login/login.php" class="links">Login Here</a> &nbsp  &nbsp  &nbsp  &nbsp <a href="#" class="links">Registration Here</a> 
+			<a href="Login/login.php" class="links">Login Here</a> &nbsp;  &nbsp;  &nbsp;  &nbsp; <a href="#" class="links">Registration Here</a> 
 		</div> <br> <br>
-
 		<p>As per above links, please do the <code>New Request</code> while admitting to the hospital. And after that please do the <code>Registration Process</code> and than for further functionalities <code>Login Process</code> should be done.</p> <br> <br> <br>
-
 		<!-- Now Creating the Receptionist Table -->
 		<h2>Receptionist</h2>
 		<div class="recp-table">
