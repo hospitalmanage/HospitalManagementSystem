@@ -3,10 +3,10 @@
 session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: welcome.php");
-    exit;
-}
+// if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+//     header("location: welcome.php");
+//     exit;
+// }
  
 // Include config file
 require_once "config.php";
@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check if username is empty
     if(empty(trim($_POST["username"]))){
         $username_err = "Please enter username.";
-    } else{
+    } else {
         $username = trim($_POST["username"]);
     }
     
@@ -30,6 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $password_err = "Please enter your password.";
     } else{
         $password = trim($_POST["password"]);
+        $md_pass = md5($password);
     }
     
     // Validate credentials
@@ -54,7 +55,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     // Bind result variables
                     $stmt->bind_result($id, $username, $hashed_password);
                     if($stmt->fetch()){
-                        if(password_verify($password, $hashed_password)){
+                        if($md_pass == $hashed_password){
                             // Password is correct, so start a new session
                            // session_start();
                             
@@ -95,8 +96,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
+        body{ 
+            font: 14px
+            sans-serif;
+            }
+        .wrapper { 
+            width: 350px; 
+            padding: 20px; 
+        }
         .sign-up {
             color: blue;
         }

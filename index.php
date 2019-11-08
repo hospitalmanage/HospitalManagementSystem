@@ -19,8 +19,8 @@
 			<h5>This page is a dummy page that contains all the content fake and will be replaced in near by time.</h5>
 			<p>Please make sure that you should be comfortable to our website.<br>If not than without any hesitation Contact Us.</p>
 		</div>
-		<div>
-			<a href="NewRequest/newrequest.php" class="links" target="_self">New Request Here</a> <br> <br>
+		<div class="index-links text-center">
+			<!-- <a href="NewRequest/newrequest.php" class="links" target="_self">New Request Here</a> -->
 			<a href="Login/login.php" class="links">Login Here</a> &nbsp;  &nbsp;  &nbsp;  &nbsp; <a href="#" class="links">Registration Here</a> 
 		</div> <br> <br>
 		<p>As per above links, please do the <code>New Request</code> while admitting to the hospital. And after that please do the <code>Registration Process</code> and than for further functionalities <code>Login Process</code> should be done.</p> <br> <br> <br>
